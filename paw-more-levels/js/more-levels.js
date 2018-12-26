@@ -1,6 +1,6 @@
 /*
- |  PawMorePages - A small Bludit Hack to go deeper!
- |  @file       ./js/more-pages.js
+ |  PawMoreLevels - A small Bludit Hack to go a bit deeper!
+ |  @file       ./js/more-levels.js
  |  @author     SamBrishes <sam@pytes.net>
  |  @version    0.1.0 - Alpha
  |

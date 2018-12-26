@@ -1,6 +1,6 @@
 <?php
 /*
- |  PawMorePages - A small Bludit Hack to go deeper!
+ |  PawMoreLevels - A small Bludit Hack to go a bit deeper!
  |  @file       ./plugin.php
  |  @author     SamBrishes <sam@pytes.net>
  |  @version    0.1.0 - Alpha
@@ -10,14 +10,14 @@
  */
     if(!defined("BLUDIT")){ die("Go directly to Jail. Do not pass Go. Do not collect 200 Cookies!"); }
 
-    class PawMorePages extends Plugin{
+    class PawMoreLevels extends Plugin{
         /*
          |  CONSTRUCTOR
          |  @since  0.1.0
          */
         public function __construct(){
             global $url, $pages;
-            require_once("system/more-pages.class.php");
+            require_once("system/paw.pages.class.php");
 
             // Overwrite Pages
             $pages = new PawPages();
@@ -61,7 +61,7 @@
          |  @since  0.1.0
          */
         public function adminBodyEnd(){
-            $file = $this->domainPath() . "js/more-pages.js";
+            $file = $this->domainPath() . "js/more-levels.js";
             return '<script type="text/javascript" src="'. $file .'"></script>';
         }
     }

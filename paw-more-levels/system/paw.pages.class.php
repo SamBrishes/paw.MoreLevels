@@ -1,7 +1,7 @@
 <?php
 /*
- |  PawMorePages - A small Bludit Hack to go deeper!
- |  @file       ./system/more-pages.class.php
+ |  PawMoreLevels - A small Bludit Hack to go a bit deeper!
+ |  @file       ./system/paw.pages.class.php
  |  @author     SamBrishes <sam@pytes.net>
  |  @version    0.1.0 - Alpha
  |
