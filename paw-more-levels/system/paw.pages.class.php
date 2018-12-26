@@ -13,7 +13,7 @@
     class PawPages extends Pages{
         /*
          |  OVERWRITE :: GENERATE KEY
-         |  @since  1.0.0
+         |  @since  0.1.0
          */
         public function generateKey($text, $parent = false, $slug = false, $old = ""){
             if($slug){
@@ -26,7 +26,7 @@
 
         /*
          |  OVERWRITE :: GET PARENTS
-         |  @since  1.0.0
+         |  @since  0.1.0
          */
         public function getParents(){
             return $this->getPublishedDB();
@@ -34,7 +34,7 @@
 
         /*
          |  HELPER :: GET REAL NEXT PAGE
-         |  @since  1.0.0
+         |  @since  0.1.0
          */
         public function realNextPageKey($slug){
             $keys = $this->getPublishedDB();
@@ -49,7 +49,7 @@
 
         /*
          |  HELPER :: GET REAL PREVIOUS PAGE
-         |  @since  1.0.0
+         |  @since  0.1.0
          */
         public function realPreviousPageKey($slug){
             return parent::nextPageKey($slug);
