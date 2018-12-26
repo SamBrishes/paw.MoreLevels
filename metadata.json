@@ -1,0 +1,10 @@
+{
+    "author": "SamBrishes, pytesNET",
+    "email": "sam@pytes.net",
+    "website": "https://www.pytes.net",
+    "version": "0.1.0",
+    "releaseDate": "2018-12-01",
+    "license": "MIT",
+    "compatible": "3.5.0",
+    "notes": ""
+}
