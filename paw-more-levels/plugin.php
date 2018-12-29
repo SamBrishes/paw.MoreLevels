@@ -3,7 +3,7 @@
  |  PawMoreLevels - A small Bludit Hack to go a bit deeper!
  |  @file       ./plugin.php
  |  @author     SamBrishes <sam@pytes.net>
- |  @version    0.1.0 - Alpha
+ |  @version    0.1.1 - Alpha
  |
  |  @license    X11 / MIT License
  |  @copyright  Copyright © 2018 - SamBrishes, pytesNET <info@pytes.net>
@@ -13,7 +13,7 @@
     class PawMoreLevels extends Plugin{
         /*
          |  CONSTRUCTOR
-         |  @since  0.1.0
+         |  @since  0.1.1
          */
         public function __construct(){
             global $url, $pages;
@@ -34,6 +34,11 @@
                     die(json_encode(array("status" => 1, "files" => "Invalid query.")));
                 }
 
+                // Current Page
+                if(strpos($_SERVER["HTTP_REFERER"], DOMAIN_ADMIN . "edit-content") === 0){
+                    $current = str_replace(DOMAIN_ADMIN . "edit-content/", "", $_SERVER["HTTP_REFERER"]);
+                }
+
                 // Get Pages
                 $temp = array();
                 foreach($pages->getParents() AS $parent){
@@ -47,6 +52,9 @@
                                 $getPage = new Page($path[0]);
                                 $title[] = $getPage->title();
                                 $path[0] = array_shift($path) . "/" . $path[0];
+                            }
+                            if(isset($current) && $page->key() == $current){
+                                continue;
                             }
                             $temp[$page->key()] = implode(" / ", $title) . " / " . $temp[$page->key()];
                         }

@@ -2,7 +2,7 @@
  |  PawMoreLevels - A small Bludit Hack to go a bit deeper!
  |  @file       ./js/more-levels.js
  |  @author     SamBrishes <sam@pytes.net>
- |  @version    0.1.0 - Alpha
+ |  @version    0.1.1 - Alpha
  |
  |  @license    X11 / MIT License
  |  @copyright  Copyright © 2018 - SamBrishes, pytesNET <info@pytes.net>

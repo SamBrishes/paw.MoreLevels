@@ -2,6 +2,6 @@
 	"plugin-data":
 	{
 		"name": "paw.MoreLevels",
-		"description": "A small Bludit Hack to go a bit deeper: It allows more then 2 levels of Pages!"
+        "description": "A small Bludit Hack, which increases the number of superordinate Page-Levels to allow a deeper Page-Hierarchy!"
 	}
 }
