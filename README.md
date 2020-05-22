@@ -1,7 +1,7 @@
 More Levels - Get a deeper Page-Hierarchy
 =========================================
-[![Bludit](https://s.pytes.me/07dc5062)](https://www.bludit.com)
-[![Version](https://s.pytes.me/7850b437)](https://github.com/pytesNET/media/releases)
+[![Bludit](https://s.pytes.me/b0f39277)](https://www.bludit.com)
+[![Version](https://s.pytes.me/e83aab71)](https://github.com/pytesNET/more-levels/releases)
 [![Support Me](https://s.pytes.me/4a1717aa)](https://buymeacoffee.com/pytesNET)
 
 The More Levels Bludit Plugin allows you to select all available pages as parent, by bypassing and
