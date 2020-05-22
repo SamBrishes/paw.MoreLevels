@@ -5,11 +5,9 @@ More Levels - Get a deeper Page-Hierarchy
 [![Support Me](https://s.pytes.me/4a1717aa)](https://buymeacoffee.com/pytesNET)
 
 The More Levels Bludit Plugin allows you to select all available pages as parent, by bypassing and
-overwriting the default AJAX function.
-
-A few lines of JavaScript also ensures, that you can easily edit each page, without loosing the
-parent page again. The plugin also injects a custom `Pages` class to get easily access to the
-parent pages too. Next to them it also fixed a known [issue](https://github.com/bludit/bludit/issues/777)!
+overwriting the default AJAX function. A few lines of JavaScript also ensures, that you can easily
+edit each page, without loosing the parent page again. The plugin also injects a custom `Pages`
+class to get easily access to the parent pages too. Next to them it also fixed a known [issue](https://github.com/bludit/bludit/issues/777)!
 
 Requirements
 ------------
