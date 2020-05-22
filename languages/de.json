@@ -1,0 +1,7 @@
+{
+	"plugin-data":
+	{
+		"name": "More Levels",
+        "description": "Ein kleiner Bludit Hack, der eine tiefere Seitenhierarchie erlaubt indem jede Seite als Eltern-Seite verwendet werden kann."
+	}
+}

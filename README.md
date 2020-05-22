@@ -1,18 +1,35 @@
-paw.MoreLevels - A Bludit Plugin to extend the Depth
-====================================================
-The paw.MoreLevels Bludit Plugin modifies the core `Pages` class (using an own class, which inherits
-the core one) as well as the default `booty` administration theme (using JavaScript) to allow to
-add more then 2 levels of pages. It also overwrites the AJAX call to `ajax/get-parents` to
-achieve a seamless integrations, which also fixes a known [issue](https://github.com/bludit/bludit/issues/777)!
+More Levels - Get a deeper Page-Hierarchy
+=========================================
+[![Bludit](https://s.pytes.me/07dc5062)](https://www.bludit.com)
+[![Version](https://s.pytes.me/7850b437)](https://github.com/pytesNET/media/releases)
+[![Support Me](https://s.pytes.me/4a1717aa)](https://buymeacoffee.com/pytesNET)
 
-Only tested with the current [Bludit](https://bludit.org/) version (3.5.0)!
+The More Levels Bludit Plugin allows you to select all available pages as parent, by bypassing and
+overwriting the default AJAX function.
+
+A few lines of JavaScript also ensures, that you can easily edit each page, without loosing the
+parent page again. The plugin also injects a custom `Pages` class to get easily access to the
+parent pages too. Next to them it also fixed a known [issue](https://github.com/bludit/bludit/issues/777)!
+
+Requirements
+------------
+-   Bludit 3.5.0+
 
 Installation
 ------------
-1.  Just upload the main directory `paw-more-levels` to your `bl-plugins` folder.
-2.  Activate the `paw.MoreLevels` plugin on the administration backend
-3.  Create your Content, with more Levels, using the known ways!
+1. Download the **More Levels** Plugin
+2. Upload the main plugin folder to your `bl-plugins` directory of your Bludit Website(s)
+3. Enable the "More Levels" Plugin on the Plugins admin page
+
+Support us with a Coffee
+------------------------
+You like our free Bludit Plugins and want to support us? Sounds awesome, you can always buy us a
+coffee on [BuyMeACoffee](https://www.buymeacoffee.com/pytesNET). **Thanks for your support**.
+
+<p align="center" style="text-align: center;">
+<a href="https://www.buymeacoffee.com/pytesNET"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" title="Buy Me A Coffee" /></a>
+</p>
 
 Copyright & License
 -------------------
-Published under the MIT-License; Copyright &copy; 2018 SamBrishes, pytesNET
+Published under the MIT-License; Copyright © 2018 - 2020 pytesNET.

@@ -1,9 +1,9 @@
 {
     "author": "SamBrishes, pytesNET",
     "email": "sam@pytes.net",
-    "website": "https://www.pytes.net",
-    "version": "0.1.1",
-    "releaseDate": "2018-12-01",
+    "website": "https://www.codeblu.dev/plugins/more-levels",
+    "version": "0.2.0",
+    "releaseDate": "2020-05-22",
     "license": "MIT",
     "compatible": "3.5.0",
     "notes": ""
