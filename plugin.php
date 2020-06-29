@@ -3,16 +3,19 @@
  |  MoreLevels  A small hacky way to get more levels on your content.
  |  @file       ./plugin.php
  |  @author     SamBrishes <sam@pytes.net>
- |  @version    0.2.0 [0.1.0] - Beta
+ |  @version    0.2.1 [0.1.0] - Beta
  |
  |  @website    https://github.com/pytesNET/more-levels
  |  @license    X11 / MIT License
  |  @copyright  Copyright © 2018 - 2020 pytesNET <info@pytes.net>
  */
     defined("BLUDIT") or die("Go directly to Jail. Do not pass Go. Do not collect 200 Cookies!");
-
+    
     // Main Plugin Class
     class PawMoreLevels extends Plugin {
+        const VERSION = "0.2.1";
+        const STATUS = "Beta";
+
         /*
          |  CONSTRUCTOR
          |  @since  0.1.1
@@ -182,17 +185,18 @@
             }
 
             // Prepare Parent
-            if(!empty($page)) {
-                $parent = explode("/", $page->key());
+            if(is_a($page, "Page") && strpos($page->key(), "/") !== false) {
                 $parent = new Page(substr($page->key(), 0, strrpos($page->key(), "/")));
             }
 
             // Render JavaScript
             ob_start();
             ?>
+                <!-- More Levels Plugin -->
                 <script type="text/javascript">
                     "use strict";
 
+                    <?php if(version_compare(BLUDIT_VERSION, "3.10.0", "<")) { ?>
                     /*
                      |  OVERWRITE PARENT SLUG (BLUDIT < 3.10.0)
                      |  @since  0.1.0
@@ -205,7 +209,7 @@
                             document.querySelector("#jsparentTMP").value = key.value.slice(0, key.value.lastIndexOf("/"));
                         }
                     }
-
+                    <?php } else if(isset($parent)) { ?>
                     /*
                      |  OVERWRITE PARENT SLUG (BLUDIT >= 3.10.0)
                      |  @since  0.2.0
@@ -215,6 +219,7 @@
                         select.options[0].setAttribute("value", "<?php echo $parent->key(); ?>");
                         select.options[0].innerText = "<?php echo str_replace("\"", "", $parent->title()); ?>";
                     }
+                    <?php } ?>
                 </script>
             <?php
             $content = ob_get_contents();

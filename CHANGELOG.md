@@ -1,6 +1,11 @@
 CHANGELOG
 =========
 
+Version 0.2.1 - Beta
+--------------------
+-   Bugfix: #4 - Does not corporate with TinyMCE editor
+-   Bugfix: #3 - PHP-Warning
+
 Version 0.2.0 - Beta
 --------------------
 -   Add: Support for Bludit v3.10 and above.

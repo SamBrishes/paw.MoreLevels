@@ -3,7 +3,7 @@
  |  MoreLevels  A small hacky way to get more levels on your content.
  |  @file       ./plugin.php
  |  @author     SamBrishes <sam@pytes.net>
- |  @version    0.2.0 [0.1.0] - Beta
+ |  @version    0.2.1 [0.1.0] - Beta
  |
  |  @website    https://github.com/pytesNET/more-levels
  |  @license    X11 / MIT License
